@@ -8,4 +8,7 @@ mix.js('resources/js/index.js', 'dist/js')
     .postCss('resources/css/app.css', 'dist/css', [
         require('tailwindcss'),
     ])
+    .options({
+        processCssUrls: false
+    })
     .version();
