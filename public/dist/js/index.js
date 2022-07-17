@@ -19,7 +19,7 @@ var root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.get
 root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
   className: "text-red-800 italic",
   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-    children: "Hello World"
+    children: "sss ddd"
   })
 }));
 

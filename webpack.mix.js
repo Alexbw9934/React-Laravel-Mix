@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 let tailwindcss = require('tailwindcss');
+// let path = require('path');
 
 mix.js('resources/js/index.js', 'dist/js')
     .react()
@@ -9,6 +10,18 @@ mix.js('resources/js/index.js', 'dist/js')
         require('tailwindcss'),
     ])
     .options({
-        processCssUrls: false
+        processCssUrls: false,
+        postCss: [tailwindcss('./tailwindcss.config.js')],
     })
+    // .browserSync({
+    //     proxy: 'localhost:8000',
+    // })
+    // .webpackConfig({
+    //     resolve: {
+    //         modules: [
+    //             'node_modules',
+    //             path.resolve(__dirname, 'vendor/laravel/spark/resources/assets/js')
+    //         ]
+    //     }
+    // })
     .version();
